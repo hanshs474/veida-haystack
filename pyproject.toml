@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "veida-haystack"
+version = "0.1.0"
+description = "Haystack component for Veida AI image generation, usable with no API key"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "Veida" }]
+keywords = ["haystack", "ai", "image-generation", "text-to-image", "no-api-key"]
+dependencies = ["haystack-ai>=2.0", "veida>=0.1.0"]
+
+[project.urls]
+Homepage = "https://veida.ai"
+Source = "https://github.com/hanshs474/veida-haystack"
+Documentation = "https://veida.readthedocs.io/"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/veida_haystack"]
